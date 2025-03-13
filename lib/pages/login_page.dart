@@ -1,7 +1,8 @@
 //import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:myapp/main.dart';
+
+import 'package:myapp/pages/main_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -132,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomePage(),
+                          builder: (context) => const MainPage(),
                         ),
                       );
                     } else {
