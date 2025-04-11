@@ -1,16 +1,23 @@
-# myapp
+📱 FlutterApp
 
-A new Flutter project.
+Um aplicativo Flutter com funcionalidades de login e cadastro de usuários.
 
-## Getting Started
+🚀 Tecnologias Utilizadas
 
-This project is a starting point for a Flutter application.
+Flutter
 
-A few resources to get you started if this is your first Flutter project:
+Dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Firebase/Auth (ou outra opção para autenticação)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Provider (ou outro gerenciador de estado, se aplicável)
+
+📦 Funcionalidades
+
+📌 Tela de Login
+
+📝 Tela de Cadastro
+
+🔐 Autenticação de Usuário
+
+📲 Persistência de Sessão
