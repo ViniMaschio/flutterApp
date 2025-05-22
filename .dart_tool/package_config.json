@@ -212,10 +212,10 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-04-04T00:54:19.234019Z",
+  "generated": "2025-05-22T00:43:15.949865Z",
   "generator": "pub",
-  "generatorVersion": "3.7.0",
+  "generatorVersion": "3.7.2",
   "flutterRoot": "file:///C:/src/flutter",
-  "flutterVersion": "3.29.0",
+  "flutterVersion": "3.29.3",
   "pubCache": "file:///C:/Users/Vinicius%20Maschio/AppData/Local/Pub/Cache"
 }

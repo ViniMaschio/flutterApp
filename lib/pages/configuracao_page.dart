@@ -12,7 +12,27 @@ class _ConfiguracaoPageState extends State<ConfiguracaoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Configurações"), backgroundColor: const Color.fromARGB(255, 153, 153, 152), centerTitle: true),
-      body: const Center(child: Text("Configurações")),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            ListTile(title: const Text("Notificações"), trailing: Switch(value: true, onChanged: (value) {})),
+            ListTile(title: const Text("Tema Escuro"), trailing: Switch(value: false, onChanged: (value) {})),
+            ListTile(
+              title: const Text("Idioma"),
+              trailing: DropdownButton<String>(
+                value: "Português",
+                items: const [
+                  DropdownMenuItem(value: "Português", child: Text("Português")),
+                  DropdownMenuItem(value: "Inglês", child: Text("Inglês")),
+                ],
+                onChanged: (value) {},
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

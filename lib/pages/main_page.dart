@@ -12,8 +12,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final PageController _pageController = PageController();
-  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -68,35 +66,11 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
         ),
-        body: PageView(
-          controller: _pageController,
-          onPageChanged: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-          children: const [
-            Center(child: Text("Home")),
-            Center(child: Text("Perfil")),
-            Center(child: Text("Configurações")),
-            Center(child: Text("Sobre")),
-          ],
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          type: BottomNavigationBarType.fixed,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-              _pageController.jumpToPage(index);
-            });
-          },
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Perfil"),
-            BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Configurações"),
-            BottomNavigationBarItem(icon: Icon(Icons.info), label: "Sobre"),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [const Text("Bem Vindo ao App"), const SizedBox(height: 20)],
+          ),
         ),
       ),
     );

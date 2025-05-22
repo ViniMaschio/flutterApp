@@ -16,7 +16,7 @@ class _CepScreenState extends State<CepPage> {
   Widget build(BuildContext context) {
     CepProvider provider = Provider.of<CepProvider>(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Busca CEP'), centerTitle: true, backgroundColor: Colors.redAccent),
+      appBar: AppBar(title: const Text('Busca CEP'), centerTitle: true, backgroundColor: Color.fromARGB(255, 153, 153, 152)),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
